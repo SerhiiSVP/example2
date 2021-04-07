@@ -5,7 +5,7 @@
 
 .connect {
     &__wrapper {
-        background: #FFBCA7;
+        background: #BF8B85;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
         border-radius: 24px;
         text-align: center;
@@ -21,7 +21,7 @@
 
     &__link {
         display: inline-block;
-        color: #FF8080;
+        color: #BF8B85;
         @include make-font("Montserrat", 700, 24px, 24px);
         padding: 16px 56px;
         background: #FFF;
@@ -30,7 +30,7 @@
         transition: all 0.3s;
 
         &:hover {
-            background: #FF8080;
+            background: #AD8A64;
             color: #FFF;
             box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
             transition: all 0.3s;

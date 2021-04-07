@@ -69,7 +69,7 @@
         left: -88px;
         width: 70%;
         height: 100%;
-        background: #FFBCA7;
+        background: #BF8B85;
         border-radius: 0px 100px;
         z-index: -1;
     }
@@ -89,7 +89,7 @@
     
     &__link {
         @include make-font("Roboto", 400, 18px, 22px);
-        color: #FFBCA7;
+        color: #BF8B85;
         text-decoration: underline;
 
         &:hover {

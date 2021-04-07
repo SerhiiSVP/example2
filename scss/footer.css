@@ -56,19 +56,19 @@
 }
 
 .footer__social-link:hover {
-  border: 1px solid #FFBCA7;
+  border: 1px solid #BF8B85;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .footer__social-link:hover svg rect {
-  fill: #FFBCA7;
+  fill: #BF8B85;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .footer__social-link:hover svg path {
-  fill: #FFBCA7;
+  fill: #BF8B85;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }

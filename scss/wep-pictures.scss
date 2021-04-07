@@ -31,7 +31,7 @@
 
             &-link {
               display: inline-block;
-              background: #000;
+              background: #AD8A64;
               color: #fff;
               transition: all 0.3s;
             }
@@ -48,7 +48,7 @@
 
     &:hover {
       text-decoration: underline;
-      color: #000;
+      color: rgb(133, 127, 127);
       transition: all 0.3s;
     }
   }
@@ -78,7 +78,7 @@
       
       &-cost {
         @include make-font("Roboto", 700, 14px, 18px);
-        color: #e0727f;
+        color: #BF8B85;
         margin-bottom: 0;
       }
   }
@@ -119,7 +119,7 @@
     margin-top: -16px;
     width: 24px;
     height: 24px;
-    border: solid #e0727f;
+    border: solid #BF8B85;
     background: transparent;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -161,7 +161,7 @@
    font-size: 0;
    width: 10px;
    height: 10px;
-   background: #e0727f;
+   background: #BF8B85;
    border-radius: 50%;
    margin: 0 8px;
    cursor: pointer;
@@ -173,7 +173,7 @@
   
   .slick-dots li.slick-active {
     background: transparent;
-    border: 1px solid #e0727f;
+    border: 1px solid #BF8B85;
   }
 // Slider end
 

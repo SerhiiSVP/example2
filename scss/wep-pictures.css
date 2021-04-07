@@ -35,7 +35,7 @@
 
 .web__icon:hover .web__button-link {
   display: inline-block;
-  background: #000;
+  background: #AD8A64;
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -54,7 +54,7 @@
 
 .web__title-link:hover {
   text-decoration: underline;
-  color: #000;
+  color: #857f7f;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -101,7 +101,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: #e0727f;
+  color: #BF8B85;
   margin-bottom: 0;
 }
 
@@ -144,7 +144,7 @@
   margin-top: -16px;
   width: 24px;
   height: 24px;
-  border: solid #e0727f;
+  border: solid #BF8B85;
   background: transparent;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -191,7 +191,7 @@
   font-size: 0;
   width: 10px;
   height: 10px;
-  background: #e0727f;
+  background: #BF8B85;
   border-radius: 50%;
   margin: 0 8px;
   cursor: pointer;
@@ -203,7 +203,7 @@
 
 .slick-dots li.slick-active {
   background: transparent;
-  border: 1px solid #e0727f;
+  border: 1px solid #BF8B85;
 }
 
 /*     Responsive    */

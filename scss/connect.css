@@ -1,6 +1,6 @@
 /*   section connect */
 .connect__wrapper {
-  background: #FFBCA7;
+  background: #BF8B85;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
   border-radius: 24px;
@@ -17,7 +17,7 @@
 
 .connect__link {
   display: inline-block;
-  color: #FF8080;
+  color: #BF8B85;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -31,7 +31,7 @@
 }
 
 .connect__link:hover {
-  background: #FF8080;
+  background: #AD8A64;
   color: #FFF;
   -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);

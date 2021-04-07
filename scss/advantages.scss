@@ -22,7 +22,7 @@
         content: '';
         position: absolute;
         @include proportions (264px, 360px);
-        background: #FFBCA7;
+        background: #BF8B85;
         border-radius: 0px 100px; 
         bottom: -168px;
         right: -120px;
@@ -52,7 +52,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50px;
-            background:  #FF8080;
+            background:  #BF8B85;
         }
       }
     }
@@ -62,7 +62,7 @@
       background: #FFF;
       display: inline-block;
       padding: 16px 96px;
-      background: #ff8080;
+      background: #BF8B85;
       border-radius: 16px;
       @include make-font("Montserrat", 700, 24px, 29px);
       color: #fff;
@@ -70,7 +70,7 @@
 
       &:hover {
         color: #fff;
-        background: #FFBCA7;
+        background: #AD8A64;
         box-shadow: 1px 1px 16px #d9d7d7;
         transition: all 0.3s;
        }

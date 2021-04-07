@@ -38,10 +38,10 @@
       transition: all 0.3s ease;
 
       &:hover {
-        border-bottom: 1px solid #FFBCA7;
+        border-bottom: 1px solid #BF8B85;
         transition: all 0.3s ease;
         & a {
-            color: #FFBCA7;
+            color: #BF8B85;
             transition: all 0.3s ease;
         }
     }
@@ -73,7 +73,7 @@
   .header__icon {
     width: 40px;
     height: 40px;
-    border: 1px solid #FFBCA7;
+    border: 1px solid #BF8B85;
     border-radius: 8px;
     transition: all 0.3s;
 
@@ -119,7 +119,7 @@
       background: #FFF;
       display: inline-block;
       padding: 16px 56px;
-      background: #ff8080;
+      background: #BF8B85;
       border-radius: 10px;
       @include make-font("Montserrat", 700, 24px, 29px);
       color: #FFF;
@@ -127,7 +127,7 @@
 
       &:hover {
         color: #fff;
-        background: #FFBCA7;
+        background: #AD8A64;
         box-shadow: 1px 1px 16px #d9d7d7;
         transition: all 0.3s;
       }
@@ -155,7 +155,7 @@
           right: -120px;
           width: 472px;
           height: 624px;
-          background: #FFBCA7;
+          background: #BF8B85;
           border-radius: 0px 0px 160px 80px;
           z-index: -1;
         }
@@ -617,7 +617,7 @@
       right: 0;
       width: 128px;
       height: 120px;
-      background: #FFBCA7;
+      background: #BF8B85;
       border-radius: 0px 0px 40px 24px;
     }
   }
