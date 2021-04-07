@@ -1,0 +1,121 @@
+/*   footer   */
+
+.footer {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+    
+    &__logo {
+        margin-top: 20px;
+    }
+
+    &__wrapper {
+        height: 136px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu-item {
+        margin-left: 32px;
+    }
+
+    &__social-links {
+        display: flex;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+        transition: all 0.3s;
+        margin-left: 24px;
+        margin-top: -8px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        
+        &:hover {
+            border: 1px solid #FFBCA7;
+            transition: all 0.3s;
+            & svg rect  {
+                fill: #FFBCA7;
+                transition: all 0.3s;
+            }
+            & svg path {
+                fill: #FFBCA7;
+                transition: all 0.3s;
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .footer__menu-list {
+        padding: 0;
+    }
+}  
+
+@media screen and (max-width: 1040px) {
+            
+    .footer__logo {
+        margin-top: 24px;
+    }
+
+    .footer__menu {
+        display: none;
+    }  
+}  
+
+@media screen and (max-width: 860px) {
+
+    .footer {
+
+        &__wrapper {
+            height: 124px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &.section {
+                padding: 0 56px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .footer {
+        
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+        }
+
+        &__logo {
+            margin: 24px auto 16px;
+        }
+
+        &__logo img {
+            display: block;
+            width: 136px;
+            height: auto;
+          }
+
+        &__social-links {
+            margin-bottom: 24px;
+        }
+
+        &__social-link {
+            margin-left: 32px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import 'mixins.scss';
+
+/*   section better   */
+
+
+.better {
+    // background: #FAFAFA;
+
+    &__wrapper {
+        padding: 96px 0px 16px 88px;
+    }
+
+    &__body-text {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        @include make-font("Montserrat", 700, 18px, 22px);
+        text-decoration: underline;
+        color: #FF8080;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #000;
+            transition: all 0.3s;
+        }
+    }
+}
+
+/*    Responsive     */
+
+@media screen and (max-width: 960px) {
+    .better {
+        &__body-text {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 16px;
+        }
+
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }   
+}  
+
+@media screen and (max-width: 860px) {
+    .better {
+        .section {
+            padding: 0 32px;
+        }
+
+        &__wrapper {
+            padding: 80px 0 0 32px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 8px;
+        }
+    }
+}  
+
+@media screen and (max-width: 570px) {
+
+    .better {
+        &__body-text {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 8px;
+            }
+    
+            &__link {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .section-subtitle {
+                font-size: 14px;
+                line-height: 16px;
+            }
+    
+            .section-title {
+                font-size: 18px;
+                line-height: 21px;
+            }
+      }
+}
+
+@media screen and (max-width: 550px) {
+    .better__wrapper {
+        padding: 64px 0 0 0;
+    }
+}

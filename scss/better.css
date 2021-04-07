@@ -1,0 +1,84 @@
+/*   section better   */
+.better__wrapper {
+  padding: 96px 0px 16px 88px;
+}
+
+.better__body-text {
+  margin-bottom: 16px;
+}
+
+.better__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: underline;
+  color: #FF8080;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.better__link:hover {
+  color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*    Responsive     */
+@media screen and (max-width: 960px) {
+  .better__body-text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+  .better__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .better .section {
+    padding: 0 32px;
+  }
+  .better__wrapper {
+    padding: 80px 0 0 32px;
+  }
+  .better .section-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+  .better .section-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .better__body-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  .better__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .better .section-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .better .section-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .better__wrapper {
+    padding: 64px 0 0 0;
+  }
+}
+/*# sourceMappingURL=better.css.map */

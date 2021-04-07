@@ -1,0 +1,330 @@
+// section "bonuses"
+
+@import 'mixins.scss';
+
+.bonuses {
+    overflow: hidden;
+
+    .section-subtitle {
+        @include make-fonts-with-bot-gap ("Roboto", 400, 24px, 28px, 16px);
+    }
+
+    .section-title {
+        margin-bottom: 56px;
+    }
+}
+
+.bonuses__wrapper {
+    padding: 32px 40px 110px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bonuses__title {
+    max-width: 367px;
+}
+
+.bonuses__list {
+    counter-reset: num;
+    margin-left: 32px;
+
+    &-item {
+        list-style: none;
+        position: relative;
+        margin: 0 0 32px 16px;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+    } 
+     
+    .list-item {
+       
+    &__title {
+        @include make-fonts-with-bot-gap ("Roboto", 700, 20px, 24px, 8px);
+    }
+
+    &__subtitle {
+        @include make-fonts-with-bot-gap ("Roboto", 400, 18px, 22px, 0);
+        max-width: 470px;
+    }
+
+    &::before {
+        content: counter(num); 
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -48px;
+        width: 32px;
+        height: 32px;
+        background: #FFBCA7;
+        color: #FFF;
+        text-align: center;
+        border-radius: 50px;
+        @include make-font("Roboto", 700, 18px, 32px);
+    }
+  }
+}      
+   
+.bonuses__media{
+    position: relative;
+    margin-left: 24px;
+    margin-top: 80px;
+
+    &-main {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -80px;
+        right: -88px;
+        width: 312px;
+        height: 312px;
+        border-radius: 100%;
+        background: #FFBCA7;
+        z-index: -1;
+    }
+    .bonuses__icon {
+        margin: 0 24px;
+    }
+}
+
+.bonuses__rewies {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    position: absolute;
+    bottom: -72px;
+    right: -40px;
+
+    &-info {
+        text-align: center;
+    }
+
+    &-count {
+        @include make-fonts-with-bot-gap ("Montserrat", 700, 40px, 49px, 0);
+    }
+
+    &-text {
+        @include make-fonts-with-bot-gap ("Montserrat", 400, 24px, 29px, 0);
+        margin-top: -5px;
+    }
+
+    &-icons {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &-icon:not(:last-child) {
+        margin-left: -24px;
+    }
+}
+
+/*   Responsive   */
+
+@media screen and (max-width: 1355px) {
+    .bonuses__media::before {
+        right: -56px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .bonuses__wrapper {
+        padding: 32px 0 88px;
+      }
+}  
+
+@media screen and (max-width: 960px) {
+    .bonuses {
+
+        .section-title {
+            margin-bottom: 24px;
+        }
+    }
+
+    .bonuses__wrapper {
+        padding-bottom: 48px;
+      }  
+
+      .bonuses__title {
+        max-width: 368px;
+      }
+      
+      .bonuses__list {
+      
+        &-item{
+            margin-left: 8px;
+            margin-bottom: 24px;
+        } 
+         
+        .list-item {
+      
+        &__title {
+            @include make-fonts-with-bot-gap ("Roboto", 700, 16px, 19px, 8px);
+        }
+      
+        &__subtitle {
+            @include make-fonts-with-bot-gap ("Roboto", 400, 14px, 16px, 0);
+        }
+      
+        &::before {
+            left: -36px;
+            width: 24px;
+            height: 24px;
+            @include make-font("Roboto", 700, 12px, 25px);
+        }
+      }
+      }   
+      
+      .bonuses__media{
+        margin-top: 32px;  
+      
+        &::before {
+            top: -48px;
+            right: -56px;
+            width: 192px;
+            height: 192px;
+        }
+      
+        .bonuses__icon {
+            margin: 0 16px;
+            & svg {
+              width: 24px;
+              height: 24px;
+            }
+        }
+      }
+      
+      .bonuses__rewies {
+        border-radius: 28px;
+        padding: 14px 24px;
+        bottom: -48px;
+        right: -16px;
+      
+        &-count {
+            @include make-fonts-with-bot-gap ("Montserrat", 700, 24px, 29px, 0);
+        }
+      
+        &-text {
+            @include make-fonts-with-bot-gap ("Montserrat", 400, 14px, 17px, 0);
+            margin-top: 0;
+        }
+      
+        &-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &-icon:not(:last-child) {
+            margin-left: -16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .bonuses {
+        
+        &__wrapper {
+            padding-bottom: 56px;
+            flex-direction: column;
+        }
+
+        &__title {
+            max-width: 100%;
+        }
+
+        &__list{
+
+            .list-item__subtitle {
+                max-width: 100%;
+            }
+        }
+
+        &__media-wrapper {
+            padding: 0 24px 0 16px;
+        }
+
+        &__media {
+            margin: 64px 0 0;
+        }
+
+        &__media-main {
+            min-width: 0;
+        }
+
+        &__rewies {
+            bottom: -32px;
+            right: -24px;
+    }
+}  
+
+@media screen and (max-width: 440px) {
+    .bonuses {
+
+        overflow: hidden;
+        
+        .section-subtitle {
+            margin-bottom: 8px;
+        }
+        
+        .section-title {
+            margin-bottom: 16px;
+        }
+        
+
+        .section {
+            padding: 0 32px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .list-item__title {
+            margin-bottom: 0px;
+        }
+
+        &__list-item {
+            margin-bottom: 16px;
+        }
+
+        &__media {
+
+            &::before {
+                width: 120px;
+                height: 120px;
+                top: -32px;
+                right: -24px;
+            }
+
+            .bonuses__icon {
+                bottom: -5px;
+                left: 73px;
+             }
+        } 
+
+        .bonuses__rewies {
+            padding: 16px;
+          
+            &-count {
+                @include make-fonts-with-bot-gap ("Montserrat", 700, 18px, 22px, 0);
+            }
+          
+            &-text {
+                @include make-fonts-with-bot-gap ("Montserrat", 400, 12px, 15px, 0);
+            }
+        }
+    }
+}
+}

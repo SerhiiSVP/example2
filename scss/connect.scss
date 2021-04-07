@@ -1,0 +1,150 @@
+/*   section connect */
+
+
+@import 'mixins.scss';
+
+.connect {
+    &__wrapper {
+        background: #FFBCA7;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+        border-radius: 24px;
+        text-align: center;
+        padding: 48px 0;
+        margin: 128px 0 104px 0;
+    }
+       
+    &__body-text {
+        color: #FFF;
+        margin: auto;
+        max-width: 444px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: #FF8080;
+        @include make-font("Montserrat", 700, 24px, 24px);
+        padding: 16px 56px;
+        background: #FFF;
+        border-radius: 16px;
+        margin-top: 48px;
+        transition: all 0.3s;
+
+        &:hover {
+            background: #FF8080;
+            color: #FFF;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+        }
+    }
+
+    &__title {
+        color: #FFF;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+    }
+}
+
+
+/*   responcive   */
+
+@media screen and (max-width: 1124px) {
+    .connect {
+        .section-title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .connect {
+
+        &__body-text {
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .connect {
+
+        .section-title {
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 16px;
+        }
+
+        &__wrapper {
+            padding: 32px 0;
+            margin-bottom: 56px;
+            margin-top: 96px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .connect {
+
+        &__link {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 8px 24px;
+            border-radius: 12px;
+        }
+
+        &__button {
+            margin-top: 24px;
+        }
+
+    &__wrapper {
+        margin-top: 48px;
+    }
+    }
+}  
+
+@media screen and (max-width: 650px) {
+
+    .connect {
+
+        &__wrapper {
+            margin-top: 64px;
+        }
+
+        .section-title {
+            @include make-fonts-with-bot-gap("Roboto", 700, 20px, 23px, 24px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .connect {
+
+        &__title {
+            max-width: 248px;
+            margin: 0 auto 24px;
+        }
+
+        &__button {
+            margin-top: 48px;
+        }
+
+        &__wrapper {
+            padding: 48px 16px 48px;
+            border-radius: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .connect.section {
+        padding: 0 32px;
+    }
+
+    .connect__wrapper {
+        margin: 64px 0 32px;
+    }
+}

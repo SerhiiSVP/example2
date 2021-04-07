@@ -1,0 +1,127 @@
+/*   section connect */
+.connect__wrapper {
+  background: #FFBCA7;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+  border-radius: 24px;
+  text-align: center;
+  padding: 48px 0;
+  margin: 128px 0 104px 0;
+}
+
+.connect__body-text {
+  color: #FFF;
+  margin: auto;
+  max-width: 444px;
+}
+
+.connect__link {
+  display: inline-block;
+  color: #FF8080;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 16px 56px;
+  background: #FFF;
+  border-radius: 16px;
+  margin-top: 48px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.connect__link:hover {
+  background: #FF8080;
+  color: #FFF;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.connect__title {
+  color: #FFF;
+}
+
+.connect .section-title {
+  margin-bottom: 24px;
+}
+
+/*   responcive   */
+@media screen and (max-width: 1124px) {
+  .connect .section-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .connect__body-text {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .connect .section-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+  .connect__wrapper {
+    padding: 32px 0;
+    margin-bottom: 56px;
+    margin-top: 96px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .connect__link {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 8px 24px;
+    border-radius: 12px;
+  }
+  .connect__button {
+    margin-top: 24px;
+  }
+  .connect__wrapper {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .connect__wrapper {
+    margin-top: 64px;
+  }
+  .connect .section-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .connect__title {
+    max-width: 248px;
+    margin: 0 auto 24px;
+  }
+  .connect__button {
+    margin-top: 48px;
+  }
+  .connect__wrapper {
+    padding: 48px 16px 48px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .connect.section {
+    padding: 0 32px;
+  }
+  .connect__wrapper {
+    margin: 64px 0 32px;
+  }
+}
+/*# sourceMappingURL=connect.css.map */

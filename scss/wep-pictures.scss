@@ -1,0 +1,325 @@
+@import 'mixins.scss';
+
+/*   section web   */
+
+
+.web { 
+    // background: #FAFAFA;
+    padding-bottom: 56px;
+    padding-top: 32px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+    &__icon {
+        background:#fff;
+        padding: 24px;
+        transition: all 0.3s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+        & img {
+          width: 100%;
+        }
+        
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s;
+          
+          .web__button {
+
+            &-link {
+              display: inline-block;
+              background: #000;
+              color: #fff;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+}
+
+  .web__title-link {
+    display: block;
+    @include make-font("Montserrat", 400, 12px, 16px);
+    color: #000;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+      color: #000;
+      transition: all 0.3s;
+    }
+  }
+  
+  .web__price {
+    display: flex;
+    margin: 8px auto;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+
+    &-old {
+      display: inline-block;
+      @include make-font("Montserrat", 400, 12px, 14px);
+      text-decoration: line-through;
+      margin-right: 16px;
+    }
+
+    &-new {
+        border-left: 2px solid #dadada;
+        padding-left: 8px;
+      }
+      
+      &-text {
+        @include make-fonts-with-bot-gap ("Montserrat", 400, 10px, 14px, 0px);
+      }
+      
+      &-cost {
+        @include make-font("Roboto", 700, 14px, 18px);
+        color: #e0727f;
+        margin-bottom: 0;
+      }
+  }
+  
+  .web__button {
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+
+    &-link {
+      width: 100%;
+      display: inline-block;
+      @include make-font("Montserrat", 400, 15px, 10px);
+      color: #000;
+      border: 1px solid #979797;
+      padding: 8px 0;
+      transition: all 0.3s; 
+    }
+  }
+
+// Slider start
+  .slider {
+    position: relative;
+  }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .slick-track {
+    padding: 10px 0;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    margin-top: -16px;
+    width: 24px;
+    height: 24px;
+    border: solid #e0727f;
+    background: transparent;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.08s;
+    &:hover {
+      opacity: 60%;
+    }
+  }
+
+  .slick-arrow:focus {
+    outline: 0;
+  }
+
+  .slick-arrow.slick-prev {
+    left: 50px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .slick-arrow.slick-next {
+    right: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slick-dots li {
+   list-style: none;
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   background: #e0727f;
+   border-radius: 50%;
+   margin: 0 8px;
+   cursor: pointer;
+  }  
+
+  .slick-dots li button {
+    font-size: 0;
+  }
+  
+  .slick-dots li.slick-active {
+    background: transparent;
+    border: 1px solid #e0727f;
+  }
+// Slider end
+
+/*     Responsive    */
+
+  @media screen and (max-width: 1355px) {
+    // Slider
+    .slick-arrow.slick-prev {
+      left: 20px;
+    }
+  
+    .slick-arrow.slick-next {
+      right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .web {
+      .section {
+        padding: 0 32px;
+      }
+    }
+// Slider
+    .slick-arrow.slick-prev {
+      left: 16px;
+    }
+  
+    .slick-arrow.slick-next {
+      right: 16px;
+    }
+
+  }  
+  
+  @media screen and (max-width: 885px) {
+
+    .web {
+
+      &__icon {
+         padding: 8px 16px 16px 16px;
+      }
+      
+      &__price {
+      
+          &-old {
+          margin-right: 8px;
+          }
+
+          &-text {
+            @include make-fonts-with-bot-gap ("Montserrat", 400, 10px, 14px, 0px);
+          }
+          
+          &-cost {
+            @include make-font("Roboto", 700, 14px, 14px);
+          }
+      }
+      
+      &__button {
+      
+        &-link {
+          padding: 10px 0;
+        }
+      }
+   }
+  }
+
+  @media screen and (max-width: 700px) {
+    .web {
+
+      &__wrapper {
+        justify-content: center;
+      }
+
+      &__button-link {
+        padding: 8px 0;
+      }
+
+      &__icon {
+        // width: 38%;
+        // margin: 10px;
+
+        &-third {
+          display: none;
+        }
+        
+        &-fourth {
+          display: none;
+        }
+      } 
+    }
+  }  
+
+  @media screen and (max-width: 470px) {
+    .web {
+      
+      .section {
+        padding: 0 32px;
+      }
+
+      &__title-link {
+        font-size: 8px;
+        line-height: 8px;
+      }
+
+      &__price {
+        margin: 8px 0;
+
+          &-new {
+            padding-left: 4px;
+          }
+
+          &-text {
+            @include make-fonts-with-bot-gap ("Montserrat", 400, 7px, 8px, 0px);
+          }
+          
+          &-cost {
+           @include make-font("Roboto", 700, 10px, 10px);
+          }
+
+          &-old {
+            font-size: 8px;
+            line-height: 10px;
+          }
+      }
+      
+      &__button-link {
+        padding: 4px 0;
+        font-size: 12px;
+      }
+    }
+// Slider
+    .slick-arrow.slick-prev {
+      left: 10px;
+    }
+  
+    .slick-arrow.slick-next {
+      right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    .web__price-old {
+      margin-right: 4px;
+      font-size: 8px;
+    }
+
+    .web__icon {
+      padding: 0 8px 8px 8px;
+    }
+  }
